@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0, user-scalable=yes">
+    <title>Ходаківська Ірина - сайт вчителя української мови та літератури</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <section class="header-wrapper">
+            <div class="header-image"></div>
+            <div class="header-title">
+                <h1>Сайт вчителя української мови та літератури<br>Ірини Ходаківської</h1>
+            </div>
+        </section>
+    </header>
+    <label>
+        <input type="checkbox">
+        <span class="adaptive-menu">
+            <span class="hamburger"></span>
+        </span>
+        <menu id="menu">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="lessons.html#menu">Конспекти уроків</a></li>
+            <li><a href="presentations.html#menu">Презентації</a></li>
+            <li><a href="media.html#menu">Медіагалерея</a></li>
+            <li class="active"><a href="work.html#menu">Позакласна робота</a></li>
+            <li><a href="city.html#menu">Краєзнавство</a></li>
+            <li><a href="poetry.html#menu">Поетична сторінка</a></li>
+            <li><a href="wordscloud.html#menu">Хмари слів</a></li>
+            <!-- <li><a href="distance.html#menu">Дистанційне навчання</a></li> -->
+        </menu>
+    </label>
+    <main>
+        <article>
+            <div class="mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/85.JPG" alt="7А новорічне привітання фото 1"></div>
+                    <div class="swiper-slide"><img src="img/87.JPG" alt="7А новорічне привітання фото 2"></div>
+                    <div class="swiper-slide"><img src="img/88.JPG" alt="7А новорічне привітання фото 3"></div>
+                    <div class="swiper-slide"><img src="img/119.JPG" alt="Ерудит-шоу фото 1"></div>
+                    <div class="swiper-slide"><img src="img/126.JPG" alt="Ерудит-шоу фото 2"></div>
+                    <div class="swiper-slide"><img src="img/130.JPG" alt="Ерудит-шоу фото 3"></div>
+                    <div class="swiper-slide"><img src="img/138.JPG" alt="Ерудит-шоу фото 4"></div>
+                    <div class="swiper-slide"><img src="img/147.JPG" alt="Ерудит-шоу фото 5"></div>
+                    <div class="swiper-slide"><img src="img/148.JPG" alt="Ерудит-шоу фото 6"></div>
+                    <div class="swiper-slide"><img src="img/154.JPG" alt="Ерудит-шоу фото 7"></div>
+                    <div class="swiper-slide"><img src="img/60.JPG" alt="Виховна фото 1"></div>
+                    <div class="swiper-slide"><img src="img/66.JPG" alt="Виховна фото 2"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </article>
+
+        <article style="font-size: 2em; padding-top: 40px; padding-bottom: 50px">
+            <a href="https://docs.google.com/document/d/1RXwxZ-u1tqLrOZzRwbY5J5dPyBPkfVCx" target="_blank">Сценарій святкування 8 березня</a><br>
+            <a href="https://docs.google.com/document/d/1l-oeXEZTtSSaBueaMTArwbn9hjzNqBkg" target="_blank">Квест-марафон «Таємниці українського слова»</a><br>
+            <a href="https://docs.google.com/document/d/1Q0_uKcssuS56bezguuOx-2FxBQi0P7wr" target="_blank">Сценарій ерудит-шоу «Я знаю українську»</a>
+        </article>
+
+        <iframe class="iframe" src="https://www.youtube.com/embed/qEsqBlcCkHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+    <footer>
+        Сopyright © 2022 Ходаківська Ірина
+    </footer>
+    <script>
+       var swiper = new Swiper(".mySwiper", {
+           navigation: {
+               nextEl: '.swiper-button-next',
+               prevEl: '.swiper-button-prev',
+           },
+           effect: "coverflow",
+           grabCursor: true,
+           centeredSlides: true,
+           slidesPerView: "auto",
+           coverflowEffect: {
+               rotate: 90,
+               stretch: 0,
+               depth: 900,
+               modifier: 1,
+               slideShadows: false,
+               scale: 1.2,
+           },
+       });
+    </script>
+</body>
+</html>

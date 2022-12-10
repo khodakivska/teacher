@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #FFE6D6;
+}
+header {
+    width: 100%;
+}
+.header-wrapper {
+    width: 95vw;
+    margin-inline: auto;
+    background-color: #DBFFD6;
+    box-shadow: 2px 0px 5px 0px rgba(105,105,105,0.5), -2px 0px 5px 0px rgba(105,105,105,0.5);
+    display: flex;
+    justify-content: space-between;
+}
+.header-image {
+    height: 500px;
+    min-width: 68%;
+    box-shadow: 2px 0px 5px 0px rgba(105,105,105,0.5);
+    background: url(https://nus.org.ua/wp-content/uploads/2020/06/10-ditej-u-klasi-ta-matematyka-na-kladovyshhi.-YAk-zakordonni-shkoly-vyhodyat-z-karantynu-e1591196348461.jpg);
+    object-fit: cover;
+    background-position: center;
+}
+.header-title {
+    max-height: 389px;
+    padding: 5%;
+    text-align: center;
+    display: flex;
+}
+.header-title h1 {
+    color: midnightblue;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+menu {
+    background-color: #D6EFFF;
+    width: 98vw;
+    min-height: 40px;
+    margin: 0 auto;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    box-shadow: 0px 2px 5px 0px rgba(105,105,105,0.5), 0px -2px 5px 0px rgba(105,105,105,0.5);
+    border-radius: 8px;
+}
+menu li {
+    list-style: none;
+    display: block;
+    text-transform: uppercase;
+    min-height: 40px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+}
+li a {
+    text-decoration: none;
+    color: #2F2B32;
+}
+li a:visited {
+    color: #2F2B32;
+}
+menu li:hover {
+    background-color: #FBD6FF;
+}
+menu .active {
+    background-color: #DBFFD6;
+}
+main {
+    max-width: 95vw;
+    background-color: #FEFEFF;
+    margin-inline: auto;
+    box-shadow: 2px 0px 5px 0px rgba(105,105,105,0.5), -2px 0px 5px 0px rgba(105,105,105,0.5);
+}
+article {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+article iframe {
+    max-width: 1024px;
+    width: 95vw;
+    height: 724px;
+}
+.pres-container {
+    position: relative;
+    cursor:pointer;
+    max-width: 1024px;
+    width: 95vw;
+    height:724px;
+    margin-inline: auto;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+div[class^="pres-cover"] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #D6EFFF;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+article a {
+    text-decoration: none;
+    color: #000;
+}
+article a:hover {
+    background-color: #FBD6FF;
+}
+article a:visited {
+    color: black;
+}
+footer {
+    width: 95vw;
+    margin-inline: auto;
+    background-color: #DBFFD6;
+    box-shadow: 2px 0px 5px 0px rgba(105,105,105,0.5), -2px 0px 5px 0px rgba(105,105,105,0.5);
+    text-align: center;
+    height: 40px;
+    padding-top: 20px;
+}
+.mySwiper {
+    width: 95vw;
+    height: 85vh;
+    overflow: hidden;
+}
+.swiper-slide img {
+    max-height: 100%;
+}
+.swiper-button-prev {
+    left: 12% !important;
+}
+.swiper-button-next {
+    right: 12% !important;
+}
+.media-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19%, 1fr));
+    grid-gap: 1vw;
+}
+.row{
+    display: flex;
+}
+.column {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column b{
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    color: midnightblue;
+}
+
+main{
+    background: #d7e7fa;
+}
+.iframe{
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    width: 65vw;
+    height: calc(65vw - 300px);
+}
+label input {
+    display: none;
+}
